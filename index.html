@@ -6,7 +6,7 @@
   <meta name="description" content="Descripción de la campaña">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="/logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -27,28 +27,35 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Psecodya</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#Trasfondo">Trasfondo</a>
-              <a class="dropdown-item" href="#">Personajes</a>
-              <a class="dropdown-item" href="#">La ciudad</a>
+              <a class="dropdown-item" href="#Gameplay">Gameplay</a>
+              <a class="dropdown-item" href="#Personajes">Personajes</a>
+              <a class="dropdown-item" href="#Ciudad">La ciudad</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Campaña</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campaña</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#Apoyo">Apoyo</a>
+              <a class="dropdown-item" href="#Objetivos">Objetivos</a>
+              <a class="dropdown-item" href="#Equipo">Equipo</a>
+              <a class="dropdown-item" href="#RRSS">Redes Sociales</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#FAQ">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comentarios</a>
+            <a class="nav-link" href="#Comentarios">Comentarios</a>
           </li>
         </ul>
       </div>
-      <a href="#" class="btn btn-primary">Apoyar ahora</a>
+      <a href="#Apoyo" class="btn btn-primary">Apoyar ahora</a>
     </nav>
     <div class="jumbotron bg-transparent justify-content-center align-content-center">
       <h1 class="display-4">Sangre de Neón</h1>
@@ -61,7 +68,7 @@
       
     <!-- Inicio -->
 
-    <article class="container" id="QueEs">
+    <article class="container" id="inicio">
       <div >
         <h2>¿QUÉ ES SANGRE DE NEÓN?</h2>
         <p>Sangre de Neón es una aventura gráfica policíaca basada en un mundo futurista. Con un estilo en 3D y personajes en pixel art, bebe de referencias artísticas como Cyberpunk: 2077 y la arquitectura gótica del siglo XII. En Sangre de Neón, las decisiones que tome el jugador serán clave para el desenlace de la trama, por lo que el destino de nuestros protagonistas estará en sus propias manos.</p>
@@ -69,7 +76,7 @@
     </article>
     <br>
     
-    <article class="container" id="trailer">
+    <article class="container">
       <div >
         <video class="videoTrailer" controls>
           <source src="videos/FINAL PRESENTACIÓN.mp4" type="video/mp4">
@@ -77,6 +84,17 @@
         </video>
       </div>
     </article>
+
+    
+  <article class="container">
+          
+      <h2>MÚSICA</h2>
+      <br>
+      <audio controls class="w-100">
+        <source src="audio/NeonBloodTrailerPruebaConPrgreMotifs.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+      </audio>
+  </article>
 
 
     <!-- El Mundo -->
@@ -90,7 +108,7 @@
     </article>
 
     <br>
-    <article class="container">
+    <article class="container" id="Gameplay">
       <h2>GAMEPLAY</h2>
       <p>Sangre de Neón es un videojuego de investigación policial en una ciudad futurista. Por ello, debes investigar los diversos lugares de Psecodya, interactuando con la gente y el entorno para desentrañar los secretos de la ciudad. Tanto en las secciones de conversación, los tiroteos o secciones de sigilo, debes hacer uso de las habilidades propias de los dos personajes que controlas. El jugador puede ajustar la experiencia a su gusto a través de chips, equipamiento y otros útiles para la investigación.</p>
     
@@ -99,7 +117,7 @@
 
     <br>
 
-    <article class="container">
+    <article class="container" id="Personajes">
       
         <h2>PERSONAJES</h2>
         <div class="row">
@@ -125,7 +143,7 @@
     </article>
 
     <br>
-    <article class="container">
+    <article class="container" id="Ciudad">
       <h2>DESCUBRE LA CIUDAD DE PSECODYA</h2>
         <div class="container p-3 my-5 bg-dark text-white w-100" >
             <img src="images/mapa.png" id="ImagenMapa" usemap="#mapa" class="w-100 maparea" >
@@ -133,14 +151,14 @@
       
 
       <map name="mapa">
-        <area data-toggle="modal" alt="Distrito Antiguo" title="Distrito Antiguo" coords="257,-1,409,137,446,181,905,95,1203,239,1214,223,1227,218,1241,213,1252,213,1265,218,1282,218,1299,213,1316,212,1329,206,1343,202,1357,199,1370,194,1381,191,1394,180,1401,168,1406,156,1405,140,1403,123,1402,112,1406,101,1415,93,1425,85,1434,74,1439,61,1437,50,1434,37,1429,27,1425,13,1418,-1,464,-1" shape="poly" data-id="distAntiguo">
-        <area alt="Distrito Laboral" title="Distrito Laboral"  coords="469,211,714,281,904,283,1135,230,904,126" shape="poly" data-id="distLaboral">
-        <area alt="Distrito Religioso" title="Distrito Religioso" coords="807,363,53" shape="circle" data-id="distReligioso">
-        <area alt="Distrito Gubernamental" title="Distrito Gubernamental" coords="715,285,906,285,904,448,715,448" shape="poly" data-id="distGubernamental">
-        <area alt="Distrito Comercial" title="Distrito Comercial" coords="467,213,716,283,714,449,471,438,498,357,487,253" shape="poly" data-id="distComercial">
-        <area alt="Distrito Empresarial" title="Distrito Empresarial" coords="470,439,449,504,437,518,368,576,731,629,717,448" shape="poly" data-id="distEmpresarial">
-        <area alt="Distrito Academico" title="Distrito Academico" coords="716,446,905,448,1065,541,733,629" shape="poly" data-id="distAcademico">
-        <area alt="Distrito del Ocio" title="Distrito del Ocio" coords="905,283,1138,230,1199,260,1118,528,1065,541,904,445" shape="poly" data-id="distOcio">
+        <area data-toggle="modal" alt="Distrito Antiguo" title="Distrito Antiguo" coords="142,0,148,15,160,19,179,35,192,48,206,65,219,75,227,92,249,97,265,116,287,127,308,156,332,175,351,191,362,213,378,229,384,242,400,242,416,269,435,269,456,269,478,261,508,259,535,253,559,248,583,242,605,237,634,232,656,229,691,226,715,218,753,213,783,207,831,199,869,191,891,186,912,183,934,178,955,175,977,172,1001,164,1025,162,1047,162,1071,156,1090,151,1114,148,1128,148,1149,159,1166,170,1184,178,1206,186,1230,199,1255,207,1279,218,1306,232,1336,248,1362,261,1384,267,1406,277,1430,291,1454,302,1470,312,1492,323,1516,331,1535,337,1546,347,1565,356,1578,339,1597,326,1616,326,1638,334,1654,337,1675,339,1689,334,1710,312,1735,312,1756,310,1772,304,1789,299,1807,291,1824,283,1834,272,1853,261,1848,232,1848,213,1848,191,1848,170,1864,148,1902,100,1899,75,1902,48,1894,43,1872,0" shape="poly" data-id="distAntiguo">
+        <area alt="Distrito Laboral" title="Distrito Laboral"  coords="464,310,489,320,510,320,537,331,570,342,605,350,629,356,675,369,713,380,742,399,761,396,829,423,837,434,864,420,874,428,934,428,950,434,1009,417,1023,420,1036,415,1063,423,1079,423,1093,428,1104,428,1112,423,1147,415,1168,415,1187,409,1217,404,1233,396,1265,372,1282,374,1292,369,1317,364,1341,369,1373,366,1422,361,1443,337,1395,315,1333,288,1300,272,1271,259,1244,242,1206,229,1184,221,1139,197,1114,191,1093,191,1060,202,1033,207,998,213,966,215,939,224,915,224,893,226,869,234,837,242,796,250,753,259,710,264,678,277,648,277,621,283,594,285,572,296,548,299,524,304,497,307" shape="poly" data-id="distLaboral">
+        <area alt="Distrito Religioso" title="Distrito Religioso" coords="955,452,969,458,985,455,1007,458,1023,474,1036,482,1047,493,1044,517,1047,571,1031,595,1012,611,996,625,966,617,947,609,928,609,909,609,907,558,901,536,888,520,915,471" shape="circle" data-id="distReligioso">
+        <area alt="Distrito Gubernamental" title="Distrito Gubernamental" coords="831,431,861,420,871,428,898,428,915,428,936,428,950,434,1009,417,1022,417,1036,412,1060,423,1079,426,1093,428,1101,428,1109,439,1106,477,1098,506,1090,522,1098,547,1109,560,1117,576,1119,582,1119,595,1122,603,1114,617,1114,625,1122,641,1128,671,1103,671,1084,673,1068,679,1047,679,1028,673,1012,676,987,679,974,676,955,671,950,671,925,654,890,665,861,679,834,679,828,684,815,668,823,657,839,638,842,614,844,595,853,579,845,558,845,541,837,522,831,506,826,501,826,487,839,461" shape="poly" data-id="distGubernamental">
+        <area alt="Distrito Comercial" title="Distrito Comercial" coords="467,313,492,323,513,323,530,329,565,342,608,353,629,356,683,375,721,385,748,402,761,399,813,415,832,426,842,439,837,455,837,472,826,490,837,512,845,536,848,558,850,579,848,601,845,620,845,639,832,649,826,660,796,655,756,644,713,652,643,652,597,660,562,649,551,655,519,655,470,636,486,612,491,558,502,541,500,522,502,490,489,477,478,463,483,455,481,436,491,428,486,412,489,399,483,377,475,366,464,350,454,337" shape="poly" data-id="distComercial">
+        <area alt="Distrito Empresarial" title="Distrito Empresarial"  coords="842,945,850,929,839,870,850,827,839,711,829,703,829,681,818,671,823,663,753,644,715,652,640,649,594,654,559,649,518,654,470,636,464,646,454,660,451,684,438,724,427,746,413,765,402,770,373,800,359,816,343,838,313,846,297,838,278,846,276,859,284,867,303,859,316,865,365,870,400,875,432,873,456,881,508,886,562,894,594,905,624,902,667,908,699,902,750,918,796,932" shape="poly" data-id="distEmpresarial">
+        <area alt="Distrito Academico" title="Distrito Academico" coords="826,681,845,679,864,681,891,665,928,657,942,665,928,657,980,676,993,681,1020,673,1044,676,1066,679,1085,673,1131,673,1149,687,1158,684,1174,695,1198,695,1214,727,1233,746,1255,776,1271,776,1284,789,1311,805,1330,805,1341,813,1292,827,1257,838,1236,838,1190,856,1171,870,1141,875,1125,883,1085,878,1039,886,996,900,953,913,909,926,877,935,847,948,850,926,839,867,853,824,842,765,839,708,829,703,839,708" shape="poly" data-id="distAcademico">
+        <area alt="Distrito del Ocio" title="Distrito del Ocio" coords="1233,401,1263,372,1284,372,1317,361,1344,369,1427,364,1443,337,1543,385,1557,391,1540,431,1532,455,1527,477,1522,514,1505,555,1503,590,1489,622,1478,652,1470,668,1468,698,1465,711,1465,727,1443,765,1427,786,1435,792,1411,800,1389,805,1368,805,1338,816,1330,805,1314,805,1298,795,1284,789,1271,778,1257,778,1244,760,1228,738,1214,722,1201,698,1176,695,1163,684,1149,687,1131,671,1131,652,1128,641,1117,625,1122,603,1120,598,1122,582,1117,576,1109,560,1106,552,1098,539,1096,525,1109,479,1114,444,1104,428,1114,420,1155,415,1166,417,1174,412,1166,415" shape="poly" data-id="distOcio">
     </map>
     </article>
 
@@ -166,22 +184,13 @@
 
 
   <br>
-  <article class="container">
-        
-      <h2>MÚSICA</h2>
-      <br>
-      <audio controls class="w-100">
-        <source src="audio/NeonBloodTrailerPruebaConPrgreMotifs.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-      </audio>
-  </article>
 
     
     <!-- Campaña -->
 
     <br>
     <h1>CAMPAÑA</h1>
-    <article class="container">
+    <article class="container" id="Apoyo">
       <h2>APOYO</h2>
         <div class="row justify-content-center">
           <div class="col-md-3 neon-border ">
@@ -265,7 +274,7 @@
     </article>
 
     <br>
-    <article class="container">
+    <article class="container" id="Objetivos">
         
       <h2>OBJETIVOS</h2>
       <br>
@@ -273,7 +282,7 @@
     </article>
 
     <br>
-    <article class="container">
+    <article class="container" id="Equipo">
       <h2>CONOCE AL EQUIPO</h2>
       <div class="row">
         <div class="w-100">
@@ -363,7 +372,7 @@
     </article>
 
     <br>
-    <article class="container">
+    <article class="container" id="RRSS">
     <h2>REDES SOCIALES</h2>
     
     <br>
@@ -387,7 +396,7 @@
 
     <br>
 
-    <article class="container">
+    <article class="container" id="FAQ">
       
       <h2>FAQ</h2>
       <br>
@@ -420,7 +429,7 @@
       <br>
     </article>
     <br>
-    <article class="container">
+    <article class="container" id="Comentarios">
       
       <h2>COMENTARIOS</h2>
       <br>
