@@ -1,0 +1,54 @@
+{
+  
+    "distInfo": [
+      {
+        "id": "distLaboral",
+        "name": "Distrito Laboral",
+        "image": "../images/distritos/imgDistLaboral.jpg",
+        "description": "El distrito laboral, situado al norte de la ciudad, es el único distrito que conecta con el barrio pobre. \n Es una zona de trabajo manual y mal pagado, como el trabajo de minas o fábricas. \n Es también, con diferencia, la zona de la capital con más gente del barrio pobre, no solo por la cercanía, sino por ofrecer trabajo a quien esté dispuesto a tomarlo."
+      },
+      {
+        "id": "distOcio",
+        "name": "Distrito del Ocio",
+        "image": "../images/distritos/imgDistOcio.jpg",
+        "description": "El distrito de ocio es la zona donde la gente de la ciudad va a ahogar sus penas en las muchas actividades que se ofrecen. \n Desde bares, cines, simuladores… todo lo que cualquiera pudiera desear para estar infinitamente entretenido se encuentra aquí. \n Está situado junto al barrio universitario y laboral, dado que ambos de estos grupos son clientela excelente para los comercios del distrito."
+      },
+      {
+        "id": "distReligioso",
+        "name": "Distrito Eclesiástico",
+        "image": "../images/distritos/imgDistReligioso.jpg",
+        "description": "El distrito eclesiástico abarca el centro exacto de la ciudad. \n Es el barrio más influyente de la ciudad, incluso más que el distrito gubernamental. \n Desde la liberación de Psecodya por parte de la Netosphere, su influencia no ha hecho más que aumentar, y por ello la religión hacia la entidad controla el resto de aspectos de la ciudad."
+      },
+      {
+        "id": "distGubernamental",
+        "name": "Distrito Gubernamental",
+        "image": "../images/distritos/imgDistGubernamental.jpg",
+        "description": "El distrito gubernamental está situado en el epicentro de la ciudad, y en él se encuentran todos los edificios gubernamentales, o aquellos relacionados con agentes del gobierno, como pueden ser las comisarías o los laboratorios."
+      },
+      {
+        "id": "distComercial",
+        "name": "Distrito Comercial",
+        "image": "../images/distritos/imgDistComercial.jpg",
+        "description": "El distrito comercial aglutina todas las tiendas o locales estrictamente comerciales, tanto de compra como de venta, de productos. \n Además de eso, el distrito aprovecha estar colocado junto al mar para recibir y enviar recursos a través del puerto. \n Los recursos también pueden llegar a través de la red ferroviaria, aunque primero deben cruzar el distrito empresarial."
+      },
+      {
+        "id": "distEmpresarial",
+        "name": "Distrito Empresarial",
+        "image": "../images/distritos/imgDistEmpresarial.jpg",
+        "description": "El distrito empresarial aglutina todas las empresas de la ciudad, además de encargarse de la administración de la misma. \n Desde el control del mercado, fábricas y otros productos, todo tipo de empresas se encuentran en este distrito."
+      },
+      {
+        "id": "distAcademico",
+        "name": "Distrito Universitario",
+        "image": "../images/distritos/imgDistAcademico.jpg",
+        "description": "El distrito universitario es la zona más joven de la ciudad. \n Aparte de las universidades, aquí también se encuentran  escuelas, institutos, bibliotecas… la fuente del conocimiento de la ciudad."
+      },
+      {
+        "id": "distAntiguo",
+        "name": "Barrio Pobre",
+        "image": "../images/distritos/imgDistAntiguo.jpg",
+        "description": "El distrito pobre está situado a las afueras de la capital, separado por un río y accesible a través de dos puentes, que conectan el este y el oeste de esta gran población. \n Los habitantes de estos barrios reniegan de la Netosphere, y son considerados parias por los habitantes de la capital. \n Muchos no poseen implantes, otros han sido expulsados de la ciudad o han tenido que huir. A causa de esto, las tensiones y segregación de los nuevos parias en los barrios pobres están creciendo cada día."
+      }
+    ]
+  }
+  
