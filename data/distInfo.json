@@ -4,13 +4,13 @@
       {
         "id": "distLaboral",
         "name": "Distrito Laboral",
-        "image": "../images/1.jpg",
+        "image": "/images/1.jpg",
         "description": "El distrito laboral, situado al norte de la ciudad, es el único distrito que conecta con el barrio pobre. \n Es una zona de trabajo manual y mal pagado, como el trabajo de minas o fábricas. \n Es también, con diferencia, la zona de la capital con más gente del barrio pobre, no solo por la cercanía, sino por ofrecer trabajo a quien esté dispuesto a tomarlo."
       },
       {
         "id": "distOcio",
         "name": "Distrito del Ocio",
-        "image": "../images/imgDistOcio.jpg",
+        "image": "/images/imgDistOcio.jpg",
         "description": "El distrito de ocio es la zona donde la gente de la ciudad va a ahogar sus penas en las muchas actividades que se ofrecen. \n Desde bares, cines, simuladores… todo lo que cualquiera pudiera desear para estar infinitamente entretenido se encuentra aquí. \n Está situado junto al barrio universitario y laboral, dado que ambos de estos grupos son clientela excelente para los comercios del distrito."
       },
       {
