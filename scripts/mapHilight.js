@@ -1,5 +1,6 @@
 $(function() {
     $('.maparea').maphilight();
+    imageMapResize();
 });
 
 $(document).ready(function() {
@@ -24,5 +25,6 @@ $(document).ready(function() {
     }
     areas[i].setAttribute("coords", coords.join(","));
     }
+    imageMapResize();
   });
 

@@ -12,6 +12,8 @@
 </head>
 <body>
   
+  <button onclick="topFunction()" class="customButton" id="myBtn" title="return">Inicio</button>
+
   <div id="background-image-container">   
   
   <header>
@@ -25,7 +27,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link" href="#inicio">Inicio</a>
           </li>
@@ -55,11 +57,11 @@
           </li>
         </ul>
       </div>
-      <a href="#Apoyo" class="btn btn-primary">Apoyar ahora</a>
+      <a href="#Apoyo" class="btn btn-light">Apoyar ahora</a>
     </nav>
-    <div class="jumbotron bg-transparent justify-content-center align-content-center">
-      <h1 class="display-4">Sangre de Neón</h1>
-      <p class="lead">Todos en esta ciudad somos rehenes de los dioses</p>
+    <div class="jumbotron bg-transparent justify-content-center align-content-center customModalContent">
+      <h1 class="display-4 mainTitle">Sangre de Neón</h1>
+      <h3 class="lead subtitle">Todos en esta ciudad somos rehenes de los dioses</h3>
     </div>
   </header>
   <main>
@@ -79,7 +81,7 @@
     <article class="container">
       <div >
         <video class="videoTrailer" controls>
-          <source src="videos/FINAL PRESENTACIÓN.mp4" type="video/mp4">
+          <source src="videos/trailer.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
       </div>
@@ -150,7 +152,7 @@
         </div>    
       
 
-      <map name="mapa">
+      <map name="mapa" id="mapa">
         <area data-toggle="modal" alt="Distrito Antiguo" title="Distrito Antiguo" coords="142,0,148,15,160,19,179,35,192,48,206,65,219,75,227,92,249,97,265,116,287,127,308,156,332,175,351,191,362,213,378,229,384,242,400,242,416,269,435,269,456,269,478,261,508,259,535,253,559,248,583,242,605,237,634,232,656,229,691,226,715,218,753,213,783,207,831,199,869,191,891,186,912,183,934,178,955,175,977,172,1001,164,1025,162,1047,162,1071,156,1090,151,1114,148,1128,148,1149,159,1166,170,1184,178,1206,186,1230,199,1255,207,1279,218,1306,232,1336,248,1362,261,1384,267,1406,277,1430,291,1454,302,1470,312,1492,323,1516,331,1535,337,1546,347,1565,356,1578,339,1597,326,1616,326,1638,334,1654,337,1675,339,1689,334,1710,312,1735,312,1756,310,1772,304,1789,299,1807,291,1824,283,1834,272,1853,261,1848,232,1848,213,1848,191,1848,170,1864,148,1902,100,1899,75,1902,48,1894,43,1872,0" shape="poly" data-id="distAntiguo">
         <area alt="Distrito Laboral" title="Distrito Laboral"  coords="464,310,489,320,510,320,537,331,570,342,605,350,629,356,675,369,713,380,742,399,761,396,829,423,837,434,864,420,874,428,934,428,950,434,1009,417,1023,420,1036,415,1063,423,1079,423,1093,428,1104,428,1112,423,1147,415,1168,415,1187,409,1217,404,1233,396,1265,372,1282,374,1292,369,1317,364,1341,369,1373,366,1422,361,1443,337,1395,315,1333,288,1300,272,1271,259,1244,242,1206,229,1184,221,1139,197,1114,191,1093,191,1060,202,1033,207,998,213,966,215,939,224,915,224,893,226,869,234,837,242,796,250,753,259,710,264,678,277,648,277,621,283,594,285,572,296,548,299,524,304,497,307" shape="poly" data-id="distLaboral">
         <area alt="Distrito Religioso" title="Distrito Religioso" coords="955,452,969,458,985,455,1007,458,1023,474,1036,482,1047,493,1044,517,1047,571,1031,595,1012,611,996,625,966,617,947,609,928,609,909,609,907,558,901,536,888,520,915,471" shape="poly" data-id="distReligioso">
@@ -284,6 +286,17 @@
     <br>
     <article class="container" id="Equipo">
       <h2>CONOCE AL EQUIPO</h2>
+      <br>
+      <div class="row">
+        <div class="col-2 customModalContent">
+          <img src="images/integrantes/SBG.png" class="equipo-img">
+        </div>
+        <div class="col-10 customModalContent">
+          <h4 class="justify-content-md-start">STEINS BRIDGE GAMES</h4>
+          <p>Stein's Bridge Games es un grupo de estudiantes del grado en Diseño y Desarrollo de videojuegos en la Universidad Rey Juan Carlos. Tras varios proyectos univesrsitarios, el grupo continúa desarrollando videojuegos fuera de la universidad.</p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="w-100">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -437,16 +450,21 @@
       <h4>
         Nombre
       </h4>
-      <input type="text" class="customTextbox">
+      <input type="text" class="customTextbox" id="comentarioName">
       </input>
       <br>
       <br>
       <h4>
         Descripción
       </h4>
-      <textarea class="customTextarea"></textarea>
-      <input type="button" value="Enviar" class="customButton d-block mr-0 ml-auto"></input>
+      <textarea class="customTextarea" id="comentarioContent"></textarea>
+      <input type="button" id="enviarBtn" value="Enviar" class="customButton d-block mr-0 ml-auto"></input>
+
+      <div id="comentarios"> </div>
+      <br>
+      <h5 ></h5>
     </article>
+
 
 </div>
   </main>
@@ -464,6 +482,7 @@
 
 
   <!-- Scripts -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -473,6 +492,7 @@
   <script src="scripts/mapHilight.js"></script>
   <script src="scripts/bg.js"></script>
   <script src="scripts/imageMapResizer.min.js"></script>
-  <script type="text/javascript">  </script>
+  <script src="scripts/volverAlInicio.js"></script>
+  <script src="scripts/comentarios.js"></script>
 </body>
 </html>

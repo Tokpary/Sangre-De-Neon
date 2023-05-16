@@ -1,3 +1,46 @@
+    
+    @font-face {
+        font-family: fuenteSangre;
+        src: url(../fonts/BloodyterrorTTF.ttf);
+      }
+
+    .mainTitle{
+        font-family: fuenteSangre;
+        color: #6e0101;
+        text-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 .2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 1.3rem #bc13fe; 
+    }
+
+    .subtitle{
+        font-weight: bolder;
+        text-shadow: 0 0 .2rem #000000,
+        0 0 .2rem #000000,
+        0 0 .2rem #000000,
+        0 0 0.8rem #000000,
+        0 0 0.8rem #000000,
+        0 0 1.3rem #000000; 
+    }
+
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+    
     area:hover {
         border: 2px solid red;
     }
@@ -23,6 +66,12 @@
     /* flex: auto; */
     display: flex;
     flex-direction: column;
+    }
+
+    .dropdown-menu{
+        left: auto;
+        background-color: #61676b;
+        color: white;
     }
 
     body{
